@@ -75,11 +75,9 @@ nav ul li a:hover {
     text-decoration: none;
     display: block;
 }
-
-.dropdown:hover .dropdown-content {
+nav ul li:hover .dropdown-content{
     display: block;
 }
-
 #content {
 	padding-bottom:100px; /* Height of the footer element */
 }
