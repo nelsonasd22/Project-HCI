@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nano Electronic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="script/jquery.js"></script>
+	<link rel="stylesheet" href="font/quicksand/fonts-quicksand.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/content.css">
+	<link rel="stylesheet" href="style/form.css">
+	<link rel="stylesheet" href="style/back-Top.css">
+	<link rel="stylesheet" href="style/mini-header-footer.css">
+</head>
+<body>
+
+	<header>
+		<img src="img/Logo/NanoLogo.png" alt="">
+		<nav>	
+			<ul>
+				<li><a href="">Home</a></li>
+				<li>
+					<a href="">Product</a>
+					<div class="dropdown-content">
+						<a href="">Computer</a>
+						<a href="">Laptop</a>
+						<a href="">Smartphone</a>
+					</div>
+				</li>
+				<li><a href="">About Company</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href=""><span>Register</span></a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="container">
+			<h3>Register</h3>
+			<div id ="form-holder"> 
+				<form name ="input-form" onsubmit ="return formValidation()" method= "POST">
+				<div class = "input-row">
+					<div class= "label">Username</div>
+					<div class = "field">
+						<input type = "text" name="txtusername" id="txtusername">
+					</div>
+				</div>
+				<div class = "input-row"> 
+					<div class= 'label'>Full Name</div>
+					<div class= 'field'>
+						<input type="text" name = "txtnama" id ="txtnama">
+					</div>
+				</div>
+				<div class ="input-row">
+					<div class= "label">Gender</div>
+					<div class = "input">
+						<input type="radio" name="gender" value="Male">Male
+						<input type="radio" name="gender" value="Female">Female
+					</div>
+				</div>
+				<div class ="input-row">
+					<div class = "label">Birthday
+					<div class="field bday">
+							<input style="width: 170px;" value="" type="date" name="bday" min="1979-12-31">
+						<!-- <div>
+							<select name ="tanggal">
+								<option>Tanggal</option>
+								<option value = "1">1</option>
+								<option value = "2">2</option>
+								<option value = "3">3</option>
+								<option value = "4">4</option>
+								<option value = "5">5</option>
+								<option value = "6">6</option>
+								<option value = "7">7</option>
+								<option value = "8">8</option>
+								<option value = "9">9</option>
+								<option value = "10">10</option>
+								<option value = "11">11</option>
+								<option value = "12">12</option>
+								<option value = "13">13</option>
+								<option value = "14">14</option>
+								<option value = "15">15</option>
+								<option value = "16">16</option>
+								<option value = "17">17</option>
+								<option value = "18">18</option>
+								<option value = "19">19</option>
+								<option value = "20">20</option>
+								<option value = "21">21</option>
+								<option value = "22">22</option>
+								<option value = "23">23</option>
+								<option value = "24">24</option>
+								<option value = "25">25</option>
+								<option value = "26">26</option>
+								<option value = "27">27</option>
+								<option value = "28">28</option>
+								<option value = "29">29</option>
+								<option value = "30">30</option>
+								<option value = "31">31</option>
+							</select>
+						</div>
+						<div>
+							<select name ="bulan">
+								<option>Bulan</option>
+								<option value = "1">1</option>
+								<option value = "2">2</option>
+								<option value = "3">3</option>
+								<option value = "4">4</option>
+								<option value = "5">5</option>
+								<option value = "6">6</option>
+								<option value = "7">7</option>
+								<option value = "8">8</option>
+								<option value = "9">9</option>
+								<option value = "10">10</option>
+								<option value = "11">11</option>
+								<option value = "12">12</option>
+							</select>
+						</div> -->
+						<!-- <div>
+							<select name ="tahun">
+								<option>Tahun</option>
+								<option value = "1996">1996</option>
+								<option value = "1997">1997</option>
+								<option value = "1998">1998</option>
+								<option value = "1999">1999</option>
+								<option value = "2000">2000</option>
+								<option value = "2001">2001</option>
+								<option value = "2002">2002</option>
+								<option value = "2003">2003</option>
+								<option value = "2004">2004</option>
+								<option value = "2005">2005</option>
+								<option value = "2006">2006</option>
+								<option value = "2007">2007</option>
+							</select>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<div class ="input-row">
+				<div class ="label">Address</div>
+				<div class ="field">
+					<input type ="textarea" name ="txtalamat" id ="txtalamat">
+				</div>
+			</div>
+
+
+			<div class = "input-row"> 
+				<div class= 'label'>Email</div>
+				<div class= 'field'>
+					<input type="text" name ="txtemail" id = "txtemail" >
+				</div>
+			</div>
+			<div class = "input-row"> 
+				<div class= 'label'>Password</div>
+				<div class= 'field'>
+					<input type="password" name ="txtpassword" id ="txtpassword">
+				</div>
+			</div>
+			<div class="input-row">
+				<div class = "input">
+					<input type ="submit" value="submit">
+				</div>
+			</div>
+			<div id="message"></div>
+
+
+		</div>
+	
+	<footer>
+		<div class="social-media-container">
+			<img src="img/social media/facebook.png" alt="">
+			<a href="">Facebook</a>
+			<img src="img/social media/twitter.png" alt="">
+			<a href="">Twitter</a>
+			<img src="img/social media/instagram.png" alt="">
+			<a href="">Instagram</a>
+		</div>
+
+		<div id="footer-copyright">
+			© 2014 Copyright
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript">
+
+	    	function formValidation(){
+	    		/*var ... = document.forms["name di tag form"]["name di tag input text"].value*/
+	    		
+				var username = document.forms["input-form"]["txtusername"].value;
+
+				 var nama = document.forms["input-form"]["txtnama"].value;	
+
+				 var gender = document.forms["input-form"]["gender"].value;
+				var birthday = document.forms["input-form"]["bday"].value;
+				var address = document.forms["input-form"]["txtalamat"].value;
+				var email = document.forms["input-form"]["txtemail"].value;
+				var password = document.forms["input-form"]["txtpassword"].value;
+				var msg = document.getElementById("message");
+	
+
+				if(username == ""){
+					msg.innerHTML ="username must be filled !";
+					return false;
+				}
+				else if (nama == ""){
+					msg.innerHTML="name must be filled !";
+					return false;
+				}
+				else if(gender == ""){
+					msg.innerHTML="gender must be filled";
+					return false;
+				}
+				else if(birthday == ""){
+					msg.innerHTML="birthday must be filled";
+				 	return false;
+				}
+				else if(address == ""){
+					msg.innerHTML="address must be filled !";
+					return false;
+				}
+				else if (email == ""){
+					msg.innerHTML="email must be filled !";
+					return false;
+				}
+				else if(email.indexOf("@") ==-1 || email.indexOf(".") ==-1){
+					msg.innerHTML="email hrs mengandung @ dan .";
+					return false;
+				}
+				else if(email.indexOf("@.")==-1 || email.indexOf(".@")==-1){
+					msg.innerHTML="@ dan . atau . dan @ tidak boleh bersebalahan";
+					return false;
+				}
+				// else if (email.indexOf("@.") > -1 || email.indexOf(".@") > -1){
+				// 	alert("@ dan . gk bole sebelahan");
+				// 	return false;
+
+				// }
+				// else if (email.indexOf("@") < 0 || email.indexOf(".")< 0){
+				// 	return false;
+				// }
+				else if(password == ""){
+					alert("password must be filled !");
+					return false;
+				}
+			}
+				function cekEmail(email){
+					alert("asd");
+				//if(email.startsWith("@") || email.startsWith(".")){
+				//	alert("email gk bisa diawali @ & .");
+				//	return false;
+				//}
+			
+				//else if (email.endsWith("@")||email.endsWith(".")){
+				//	alert("email gk bole diakhiri @ & .");
+				//	return false;
+				//}
+			
+			//	if (email.indexOf("@.") > -1 || email.indexOf(".@") > -1){
+			//		alert("@ dan . gk bole sebelahan");
+			//		return false;
+			//
+			//	}
+			//	else if (email.indexOf("@") < 0 || email.indexOf(".")< 0){
+			//		return false;
+			//	}
+			//	else {
+
+			//		return true;
+			//	}
+			}
+
+				 
+
+				
+	    </script>
+</body>
+</html>
